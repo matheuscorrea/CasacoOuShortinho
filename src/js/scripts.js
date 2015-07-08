@@ -6,32 +6,33 @@ $(function () {
 
 //CASACO É EXAGERO MAS SHORTINHO É OUSADIA
 	function update() {
-	window.alert("sometext");
+
 	$.get ('http://sensor-api.localdata.com/api/v1/sources/ci4vjer3i000e02s7r2cj23gs/entries.json?count=1&sort=desc').done(function (response) {
 		var atualTemp = response.data[0].data.temperature;
-		window.alert(atualTemp);
 		if (atualTemp >= TEMP_SHORTINHO) {
-			var imagem = 'img/shortinho.gif';//SHORTINHO
+			var imagem = 'img/shortinho.png';//SHORTINHO
 			var texto = 'HOJE É DIA DE MOSTRAR AS COXAS';
 		}
 		else if (atualTemp <= TEMP_CASACO) {
-			var imagem = 'img/casaco.gif'; //CASACO
+			var imagem = 'img/casaco.png'; //CASACO
 			var texto = 'SE CONTROLA PIRIGUETE';
 		}
 		else {
-			var imagem = 'img/ousadia.jpg';//OUSADIA
+			var imagem = 'img/ouse.png';//OUSADIA
 			var texto = 'CASACO É EXAGERO MAS SHORTINHO É OUSADIA';
 		}
-
-		$('.img-responsive img').attr('src', imagem);
-		$("#estado").text(texto);
+		
+		setTimeout(function(){
+			$('.img-responsive img').attr('src', imagem).fadeIn( );
+			$("#estado").text(texto);
+		}, 5000);
 		$('.roupa').css({
 			top: '50%'
-		}).removeClass('rodar');
-		
+		});
+		$('#temp').text(atualTemp+"ºC")
 	});
 	}
-	update();
+	update(); 
 
 	setInterval(update, 10000);
 });

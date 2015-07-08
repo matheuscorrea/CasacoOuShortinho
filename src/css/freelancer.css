@@ -99,8 +99,8 @@ header .intro-text .name {
     display: block;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 2em;
-    font-weight: 700;
+    font-size: 5%;
+    font-weight: 300;
 }
 
 header .intro-text .skills {
@@ -462,14 +462,9 @@ footer .footer-below {
 	height: 100px;
 }
 .roupa {
-	padding: 0;
-	margin: 0;
-	position: absolute;
-	left: 50%;
-	top: 40%;
-	margin-left: -50px;
-	-webkit-transition: top 1s ease-in-out;
-	transition: top 1s ease-in-out;
+	height: 255px;
+	width: auto;
+	
 }
 .roupa.rodar {
 	-webkit-animation: spin .8s linear infinite;

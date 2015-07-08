@@ -2,7 +2,6 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
@@ -22,9 +21,6 @@
 		<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
 
-		<meta name="description" content="Ubiqua Application">
-		<meta name="author" content="UFF students">
-
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -35,25 +31,63 @@
 	</head>
 
 	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://github.com/matheuscorrea/CasacoOuShortinho" >Casaco ou Shortinho</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+				   <li class="page-scroll">
+                        <a href="http://map.datacanvas.org/" id="temp">Temperatura</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 		<header>
-		<div class="container">
+			<div class="container">
 			<div class="row">
 			<div class="col-lg-12">
-			<figure class="img-responsive roupa rodar">
-				 <img src="img/shortinho.gif" alt="Sun or moon depending on luminosity of the region">
+			<figure class="img-responsive">
+				 <img class="roupa" src="img/casacooushortinho.jpg" alt="shortinho ou casaco dependendo da temperatura">
 			</figure>
 					
 					<div class="intro-text">
-						<span class="name">Casaco ou Shortinho?</span>
 						<hr class="star-light">
-						<span class="skills" id="estado">Com que roupa eu vou</span><br>
-			<span class="skills" id="credLayout">Layout adaptado de: StartBootstrap(http://startbootstrap.com/template-overviews/freelancer/)</span><br>
-			<span class="skills" id="credTemp">Dados de temperatura obtidos de: DataCanvas(http://map.datacanvas.org/#!/data)</span>
+						<span class="name" id="estado">COM QUE ROUPA EU VOU?</span><br>
 					</div>
 			</div>
 			</div>
 		</div>
+		</header>
 		<script src="js/jquery-2.1.4.min.js"></script>
 		<script src="js/scripts.js"></script>
+		
+	 <!-- Footer -->
+    <footer class="text-center"> 
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <span class="skills name" id="credLayout">Layout adaptado de: StartBootstrap(http://startbootstrap.com/template-overviews/freelancer/)</span><br>
+					<span class="skills name" id="credTemp">Dados de temperatura obtidos de: DataCanvas(http://map.datacanvas.org/#!/data)</span>
+					<div class="col-lg-12">
+                        Copyright &copy; Casaco ou Shortinho 2015
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 	</body>
 </html>
