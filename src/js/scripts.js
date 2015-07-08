@@ -7,7 +7,7 @@ $(function () {
 //CASACO É EXAGERO MAS SHORTINHO É OUSADIA
 	function update() {
 
-	$.get ('http://sensor-api.localdata.com/api/v1/sources/ci4vjer3i000e02s7r2cj23gs/entries.json?count=1&sort=desc').done(function (response) {
+	$.get ('http://sensor-api.localdata.com/api/v1/sources/ci4vye225000n02s7rxjdfxa1/entries.json?count=1&sort=desc').done(function (response) {
 		var atualTemp = response.data[0].data.temperature;
 		if (atualTemp >= TEMP_SHORTINHO) {
 			var imagem = 'img/shortinho.png';//SHORTINHO
